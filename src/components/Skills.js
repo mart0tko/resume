@@ -1,9 +1,12 @@
-import { RatingIndicator, Label } from "@ui5/webcomponents-react";
+import { RatingIndicator, Label, Title } from "@ui5/webcomponents-react";
 import "./Skills.css";
 
 function Skills() {
   return (
     <div>
+      <Title level="H1"><b>Skills</b></Title>
+      <br/>
+      <br/>
       <Label className="resume__skills-label">
         JavaScript: <RatingIndicator value="5" readonly />
       </Label>

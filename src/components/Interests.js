@@ -1,9 +1,12 @@
-import { Badge } from "@ui5/webcomponents-react";
+import { Badge, Title } from "@ui5/webcomponents-react";
 import "./Interests.css";
 
 function Interests() {
   return (
     <div>
+      <Title level="H1"><b>Interests</b></Title>
+      <br/>
+      <br/>
       <Badge className="resume__interests-badge" color-scheme="7">Family</Badge>
       <Badge className="resume__interests-badge" color-scheme="1">Programming</Badge>
       <Badge className="resume__interests-badge" color-scheme="6">Programming Architecture</Badge>

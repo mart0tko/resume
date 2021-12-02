@@ -4,9 +4,9 @@ import "./Experience.css";
 function Experience() {
   return (
     <div className="resume__experience">
-      <Title level="H1" className="resume__margin">
-        Experience
-      </Title>
+      <Title level="H1"><b>Experience</b></Title>
+      <br/>
+      <br/>
       {/* Fourth */}
       <div className="resume__experience-section resume__margin">
         <Label className="resume__experience-title resume__margin">
