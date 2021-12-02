@@ -1,0 +1,50 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  height: 100%;
+}
+
+.resume__flexible-column-layout {
+  height: 100%;
+}
+
+.resume__start-column {
+  height: 100%;
+}
+
+.resume__header-info {
+  display: flex;
+  flex: 2;
+  padding-top: 2rem;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  min-height: 50%;
+}
+
+.resume__avatar {
+  min-height: 20rem;
+  min-width: 15rem;
+}
+
+.resume__header-list {
+  display: flex;
+  flex: 1;
+}
+
+.resume__list {
+
+}
+
+.resume__list-item {
+  min-height: 3rem;
+}
+
+.resume__margin-bottom {
+  margin-bottom: 1rem;
+}
+
