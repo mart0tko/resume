@@ -33,3 +33,7 @@
 .resume__margin {
   margin-bottom: 1rem;
 }
+
+li {
+  white-space: break-spaces;
+}

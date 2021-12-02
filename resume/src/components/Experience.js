@@ -151,7 +151,7 @@ function Experience() {
         </Label>
       </div>
       {/* BOR */}
-      <div className="resume__experience-section resume__margin">
+      <div className="resume__experience-section">
         <Label className="resume__experience-title resume__margin">
           <b>Position:</b> Senior Marketing Research Project Manager
         </Label>
