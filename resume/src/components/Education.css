@@ -1,0 +1,9 @@
+.resume__education-label {
+  border-bottom: 1px dotted black;
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+}
+
+.resume__education-link {
+  font-size: 1.25rem;
+}

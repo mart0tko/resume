@@ -1,0 +1,35 @@
+.resume__experience {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+.resume__experience-section {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px dotted black;
+}
+
+.resume__experience-title {
+  font-size: 1.25rem;
+}
+
+.resume__experience-company {
+  font-size: 1rem;
+}
+
+.resume__experience-date {
+  font-size: .75rem;
+}
+
+.resume__experience-description {
+  font-size: 1rem;
+}
+
+.resume__experience-description ul {
+  margin: .5rem 0 0;
+}
+
+.resume__margin {
+  margin-bottom: 1rem;
+}

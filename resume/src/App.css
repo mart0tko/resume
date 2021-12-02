@@ -13,12 +13,14 @@ html, body {
 }
 
 .resume__start-column {
-  height: 100%;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
 }
 
 .resume__header-info {
   display: flex;
-  flex: 2;
+  flex: 1;
   padding-top: 2rem;
   flex-direction: column;
   justify-content: flex-start;
@@ -33,18 +35,16 @@ html, body {
 
 .resume__header-list {
   display: flex;
-  flex: 1;
-}
-
-.resume__list {
-
-}
-
-.resume__list-item {
-  min-height: 3rem;
 }
 
 .resume__margin-bottom {
   margin-bottom: 1rem;
+}
+
+.resume__mid-column {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  padding: 2rem 1rem;
 }
 

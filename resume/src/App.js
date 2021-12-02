@@ -10,26 +10,21 @@ import {
 import { useEffect, useState } from "react";
 import "./App.css";
 import "@ui5/webcomponents-icons/dist/AllIcons.js";
-
-const oMidColumnMap = {
-  education: "education",
-  experience: "experience",
-  skills: "skills",
-  languages: "languages",
-  interests: "interests"
-}
+import oMidColumn, { oMidColumnMap } from "./components";
 
 function App() {
-  const [midColumnState, setMidColumnState] = useState("test");
+  const [midColumnElenent, setMidColumnElenent] = useState(
+    oMidColumn[oMidColumnMap.Education]
+  );
 
   useEffect(() => {
     const oList = document.getElementById("col1list");
     const oLayout = document.getElementById("fcl");
     const listener = oList.addEventListener("item-click", function (oEvent) {
       const sItemId = oEvent.detail.item.id;
-      const sNewMidColumnState = oMidColumnMap[sItemId];
-      setMidColumnState(sNewMidColumnState);
-      console.log(oMidColumnMap[sItemId], midColumnState, "A");
+      const sNewMidColumnElenent = oMidColumn[sItemId];
+      setMidColumnElenent(sNewMidColumnElenent);
+
       oLayout.layout = "TwoColumnsMidExpanded";
     });
 
@@ -40,7 +35,7 @@ function App() {
     <FlexibleColumnLayout id="fcl" className="resume__flexible-column-layout">
       <div slot="startColumn" className="resume__start-column">
         <div className="resume__header-info">
-          <Avatar size="XL" className="resume__avatar resume__margin-bottom">
+          <Avatar size="XL" shape="Square" className="resume__avatar resume__margin-bottom">
             <img
               src="./MartinGeorgiev.jpeg"
               alt="Martin Georgiev"
@@ -62,10 +57,9 @@ function App() {
           </Label>
         </div>
         <div className="resume__header-list">
-          <List id="col1list" className="resume__list">
+          <List id="col1list">
             <ui5-li
-              id={oMidColumnMap.education}
-              className="resume__list-item"
+              id={oMidColumnMap.Education}
               icon="study-leave"
               additional-text=">"
               additional-text-state="Information"
@@ -73,8 +67,7 @@ function App() {
               EDUCATION
             </ui5-li>
             <ui5-li
-              id={oMidColumnMap.experience}
-              className="resume__list-item"
+              id={oMidColumnMap.Experience}
               icon="business-card"
               additional-text=">"
               additional-text-state="Information"
@@ -82,8 +75,7 @@ function App() {
               WORK EXPERIENCE
             </ui5-li>
             <ui5-li
-              id={oMidColumnMap.skills}
-              className="resume__list-item"
+              id={oMidColumnMap.Skills}
               icon="activities"
               additional-text=">"
               additional-text-state="Information"
@@ -91,17 +83,7 @@ function App() {
               SKILLS
             </ui5-li>
             <ui5-li
-              id={oMidColumnMap.languages}
-              className="resume__list-item"
-              icon="world"
-              additional-text=">"
-              additional-text-state="Information"
-            >
-              LANGUAGES
-            </ui5-li>
-            <ui5-li
-              id={oMidColumnMap.interests}
-              className="resume__list-item"
+              id={oMidColumnMap.Interests}
               icon="globe"
               additional-text=">"
               additional-text-state="Information"
@@ -112,28 +94,7 @@ function App() {
         </div>
       </div>
 
-      <div slot="midColumn">
-        <p>
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod..."
-        </p>
-        <p>
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod..."
-        </p>
-        <p>
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod..."
-        </p>
-        <p>
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod..."
-        </p>
-        <p>
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod..."
-        </p>
-      </div>
+      <div slot="midColumn" className="resume__mid-column">{midColumnElenent}</div>
       <div slot="endColumn">
         <div className="colHeader">
           <Button design="Emphasized">Edit</Button>
