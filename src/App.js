@@ -11,6 +11,7 @@ import { useEffect, useState } from "react";
 import "./App.css";
 import "@ui5/webcomponents-icons/dist/AllIcons.js";
 import oMidColumn, { oMidColumnMap } from "./components";
+import { ThemeProvider } from "@ui5/webcomponents-react";
 
 function App() {
   const [midColumnElenent, setMidColumnElenent] = useState(
@@ -32,80 +33,91 @@ function App() {
   }, []);
 
   return (
-    <FlexibleColumnLayout id="fcl" className="resume__flexible-column-layout">
-      <div slot="startColumn" className="resume__start-column">
-        <div className="resume__header-info">
-          <Avatar size="XL" shape="Square" className="resume__avatar resume__margin-bottom">
-            <img
-              src="./MartinGeorgiev.jpeg"
-              alt="Martin Georgiev"
-              className="resume__avatar-image"
-            />
-          </Avatar>
-          <Title level="H1" className="resume__margin-bottom">
-            Martin Georgiev
-          </Title>
-          <Icon name="horizontal-grip" className="resume__margin-bottom"></Icon>
-          <Title level="H4" className="resume__margin-bottom">
-            JavaScript Developer
-          </Title>
-          <Label className="resume__margin-bottom">
-            <b>Email:</b> m.georgievv@gmail.com
-          </Label>
-          <Label className="resume__margin-bottom">
-            <b>Phone:</b> +359890117331
-          </Label>
+    <ThemeProvider>
+      <FlexibleColumnLayout id="fcl" className="resume__flexible-column-layout">
+        <div slot="startColumn" className="resume__start-column">
+          <div className="resume__header-info">
+            <Avatar
+              size="XL"
+              shape="Square"
+              className="resume__avatar resume__margin-bottom"
+            >
+              <img
+                src="./MartinGeorgiev.jpeg"
+                alt="Martin Georgiev"
+                className="resume__avatar-image"
+              />
+            </Avatar>
+            <Title level="H1" className="resume__margin-bottom">
+              Martin Georgiev
+            </Title>
+            <Icon
+              name="horizontal-grip"
+              className="resume__margin-bottom"
+            ></Icon>
+            <Title level="H4" className="resume__margin-bottom">
+              JavaScript Developer
+            </Title>
+            <Label className="resume__margin-bottom">
+              <b>Email:</b> m.georgievv@gmail.com
+            </Label>
+            <Label className="resume__margin-bottom">
+              <b>Phone:</b> +359890117331
+            </Label>
+          </div>
+          <div className="resume__header-list">
+            <List id="col1list">
+              <ui5-li
+                id={oMidColumnMap.Education}
+                icon="study-leave"
+                additional-text=">"
+                additional-text-state="Information"
+              >
+                EDUCATION
+              </ui5-li>
+              <ui5-li
+                id={oMidColumnMap.Experience}
+                icon="business-card"
+                additional-text=">"
+                additional-text-state="Information"
+              >
+                WORK EXPERIENCE
+              </ui5-li>
+              <ui5-li
+                id={oMidColumnMap.Skills}
+                icon="activities"
+                additional-text=">"
+                additional-text-state="Information"
+              >
+                SKILLS
+              </ui5-li>
+              <ui5-li
+                id={oMidColumnMap.Interests}
+                icon="globe"
+                additional-text=">"
+                additional-text-state="Information"
+              >
+                INTERESTS
+              </ui5-li>
+            </List>
+          </div>
         </div>
-        <div className="resume__header-list">
-          <List id="col1list">
-            <ui5-li
-              id={oMidColumnMap.Education}
-              icon="study-leave"
-              additional-text=">"
-              additional-text-state="Information"
-            >
-              EDUCATION
-            </ui5-li>
-            <ui5-li
-              id={oMidColumnMap.Experience}
-              icon="business-card"
-              additional-text=">"
-              additional-text-state="Information"
-            >
-              WORK EXPERIENCE
-            </ui5-li>
-            <ui5-li
-              id={oMidColumnMap.Skills}
-              icon="activities"
-              additional-text=">"
-              additional-text-state="Information"
-            >
-              SKILLS
-            </ui5-li>
-            <ui5-li
-              id={oMidColumnMap.Interests}
-              icon="globe"
-              additional-text=">"
-              additional-text-state="Information"
-            >
-              INTERESTS
-            </ui5-li>
-          </List>
-        </div>
-      </div>
 
-      <div slot="midColumn" className="resume__mid-column">{midColumnElenent}</div>
-      <div slot="endColumn">
-        <div className="colHeader">
-          <Button design="Emphasized">Edit</Button>
+        <div slot="midColumn" className="resume__mid-column">
+          {midColumnElenent}
         </div>
+        <div slot="endColumn">
+          <div className="colHeader">
+            <Button design="Emphasized">Edit</Button>
+          </div>
 
-        <p>
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod..."
-        </p>
-      </div>
-    </FlexibleColumnLayout>
+          <p>
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod..."
+          </p>
+        </div>
+      </FlexibleColumnLayout>
+    </ThemeProvider>
   );
 }
 
