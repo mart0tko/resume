@@ -2,16 +2,17 @@ import {
   Button,
   FlexibleColumnLayout,
   List,
+  StandardListItem,
   Avatar,
   Label,
   Title,
   Icon,
+  ThemeProvider
 } from "@ui5/webcomponents-react";
 import { useEffect, useState } from "react";
 import "./App.css";
 import "@ui5/webcomponents-icons/dist/AllIcons.js";
 import oMidColumn, { oMidColumnMap } from "./components";
-import { ThemeProvider } from "@ui5/webcomponents-react";
 
 function App() {
   const [midColumnElenent, setMidColumnElenent] = useState(
@@ -67,38 +68,38 @@ function App() {
           </div>
           <div className="resume__header-list">
             <List id="col1list">
-              <ui5-li
+              <StandardListItem
                 id={oMidColumnMap.Education}
                 icon="study-leave"
                 additional-text=">"
                 additional-text-state="Information"
               >
                 EDUCATION
-              </ui5-li>
-              <ui5-li
+              </StandardListItem>
+              <StandardListItem
                 id={oMidColumnMap.Experience}
                 icon="business-card"
                 additional-text=">"
                 additional-text-state="Information"
               >
                 WORK EXPERIENCE
-              </ui5-li>
-              <ui5-li
+              </StandardListItem>
+              <StandardListItem
                 id={oMidColumnMap.Skills}
                 icon="activities"
                 additional-text=">"
                 additional-text-state="Information"
               >
                 SKILLS
-              </ui5-li>
-              <ui5-li
+              </StandardListItem>
+              <StandardListItem
                 id={oMidColumnMap.Interests}
                 icon="globe"
                 additional-text=">"
                 additional-text-state="Information"
               >
                 INTERESTS
-              </ui5-li>
+              </StandardListItem>
             </List>
           </div>
         </div>
