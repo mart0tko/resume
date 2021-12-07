@@ -1,4 +1,4 @@
-import { Label, Link } from "@ui5/webcomponents-react";
+import { Link } from "@ui5/webcomponents-react";
 import "./Education.css";
 
 function Education() {
