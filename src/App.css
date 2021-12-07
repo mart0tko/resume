@@ -44,7 +44,22 @@ html, body {
 .resume__mid-column {
   display: flex;
   flex: 1;
+  position: relative;
   flex-direction: column;
   padding: 2rem 1rem;
 }
 
+.resume__mid-column-btn {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .resume__mid-column-btn {
+    display: block;
+    position: absolute;
+    align-self: flex-start;
+    min-width: 3rem;
+    top: 1rem;
+    right: 1rem;
+  }
+}

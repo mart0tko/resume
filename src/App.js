@@ -19,10 +19,11 @@ function App() {
     oMidColumn[oMidColumnMap.Education]
   );
 
+  // List items handler
   useEffect(() => {
     const oList = document.getElementById("col1list");
     const oLayout = document.getElementById("fcl");
-    const listener = oList.addEventListener("item-click", function (oEvent) {
+    const fnListListener = oList.addEventListener("item-click", function (oEvent) {
       const sItemId = oEvent.detail.item.id;
       const sNewMidColumnElenent = oMidColumn[sItemId];
       setMidColumnElenent(sNewMidColumnElenent);
@@ -30,7 +31,18 @@ function App() {
       oLayout.layout = "TwoColumnsMidExpanded";
     });
 
-    return oList.removeEventListener("item-click", listener);
+    return oList.removeEventListener("item-click", fnListListener);
+  }, []);
+
+  // Back button handler
+  useEffect(() => {
+    const oLayout = document.getElementById("fcl");
+    const oBackBtn = document.getElementsByClassName("resume__mid-column-btn")[0];
+    const fnBackBtnListener = oBackBtn.addEventListener("click", function () {
+      oLayout.layout = "OneColumn";
+    });
+
+    return oBackBtn.removeEventListener("item-click", fnBackBtnListener);
   }, []);
 
   return (
@@ -106,16 +118,7 @@ function App() {
 
         <div slot="midColumn" className="resume__mid-column">
           {midColumnElenent}
-        </div>
-        <div slot="endColumn">
-          <div className="colHeader">
-            <Button design="Emphasized">Edit</Button>
-          </div>
-
-          <p>
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod..."
-          </p>
+          <Button className="resume__mid-column-btn" icon="nav-back" title="Go back"></Button>
         </div>
       </FlexibleColumnLayout>
     </ThemeProvider>
