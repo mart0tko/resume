@@ -4,9 +4,48 @@ import "./Experience.css";
 function Experience() {
   return (
     <div className="resume__experience">
-      <Title level="H1"><b>Experience</b></Title>
-      <br/>
-      <br/>
+      <Title level="H1">
+        <b>Experience</b>
+      </Title>
+      <br />
+      <br />
+      {/* AIOPS */}
+      <div className="resume__experience-section resume__margin">
+        <Label className="resume__experience-title resume__margin">
+          <b>Position:</b> Senior JavaScript Developer
+        </Label>
+        <Label className="resume__experience-company resume__margin">
+          <b>Company:</b> AIOPSGROUP
+        </Label>
+        <Label className="resume__experience-date resume__margin">
+          <Icon name="date-time" /> 03/2022 - Ongoing
+        </Label>
+        <Label className="resume__experience-description">
+          <b>Duties: </b>
+          <ul>
+            <li>
+              Front End development and maintenance of online shop platforms
+              with Vue and React.
+              <Link target="_blank" href="https://uk.puma.com/uk">
+                PUMA,
+              </Link>
+              <Link target="_blank" href="https://www.blackboxstore.com/">
+                BLACKBOX,
+              </Link>
+              <Link target="_blank" href="https://www.hudsonstore.com/">
+                HUDSONSTORE,
+              </Link>
+              <Link target="_blank" href="https://www.urbanjunglestore.com">
+                URBANJUNGLE
+              </Link>
+            </li>
+            <li>
+              Used technologies: React, Vue, TypeScript, Next.js, Nuxt.js,
+              JavaScript, HTML, CSS, Git, Tailwind CSS, Node.js, GraphQL, Scrum.
+            </li>
+          </ul>
+        </Label>
+      </div>
       {/* Fourth */}
       <div className="resume__experience-section resume__margin">
         <Label className="resume__experience-title resume__margin">
@@ -30,10 +69,9 @@ function Experience() {
                 Product Page
               </Link>
             </li>
-            <li>Development and maintenance of Internal Statistics Infrastructure. Docker container with Node.js REST API, Node.js job runner, UI5 Front End client, MongoDB database.</li>
-            <li>Developing Web Components with HTML, CSS and JavaScript.</li>
             <li>
-              Used technologies: Scrum, Ember.js, JavaScript, HTML, CSS, Git, Rally.
+              Used technologies: Azure, Scrum, Ember.js, JavaScript, HTML, CSS,
+              Git, Rally.
             </li>
           </ul>
         </Label>
@@ -61,10 +99,15 @@ function Experience() {
                 GitHub
               </Link>
             </li>
-            <li>Development and maintenance of Internal Statistics Infrastructure. Docker container with Node.js REST API, Node.js job runner, UI5 Front End client, MongoDB database.</li>
+            <li>
+              Development and maintenance of Internal Statistics Infrastructure.
+              Docker container with Node.js REST API, Node.js job runner, UI5
+              Front End client, MongoDB database.
+            </li>
             <li>Developing Web Components with HTML, CSS and JavaScript.</li>
             <li>
-              Used technologies: Scrum, Node.js, Docker, MongoDB, JavaScript, HTML, CSS, Git, Jira.
+              Used technologies: Scrum, Node.js, Docker, MongoDB, JavaScript,
+              HTML, CSS, Git, Jira.
             </li>
           </ul>
         </Label>
@@ -84,16 +127,15 @@ function Experience() {
           <b>Duties: </b>
           <ul>
             <li>
-              Developing crypto properties trading and listing platforms with Angular.
-              <Link
-                target="_blank"
-                href="https://propy.com"
-              >
+              Developing crypto properties trading and listing platforms with
+              Angular.
+              <Link target="_blank" href="https://propy.com">
                 Propy
               </Link>
             </li>
             <li>
-              Used technologies: Angular, JavaScript, HTML, CSS, Webpack, Git, Jira, Scrum, TypeScript.
+              Used technologies: Angular, JavaScript, HTML, CSS, Webpack, Git,
+              Jira, Scrum, TypeScript.
             </li>
           </ul>
         </Label>
