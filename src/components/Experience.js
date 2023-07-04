@@ -55,7 +55,7 @@ function Experience() {
           <b>Company:</b> Fourth
         </Label>
         <Label className="resume__experience-date resume__margin">
-          <Icon name="date-time" /> 03/2021 - Ongoing
+          <Icon name="date-time" /> 03/2021 - 02/2022
         </Label>
         <Label className="resume__experience-description">
           <b>Duties: </b>
