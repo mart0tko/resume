@@ -9,6 +9,32 @@ function Experience() {
       </Title>
       <br />
       <br />
+      {/* Playtech */}
+      <div className="resume__experience-section resume__margin">
+        <Label className="resume__experience-title resume__margin">
+          <b>Position:</b> JavaScript Developer
+        </Label>
+        <Label className="resume__experience-company resume__margin">
+          <b>Company:</b> Playtech
+        </Label>
+        <Label className="resume__experience-date resume__margin">
+          <Icon name="date-time" /> 08/2023 - Ongoing
+        </Label>
+        <Label className="resume__experience-description">
+          <b>Duties: </b>
+          <ul>
+            <li>
+              JavaScript development of complex Bingo UI system. Project: 
+              <Link target="_blank" href="https://www.playtech.com/products/bingo/">
+                Bingo
+              </Link>
+            </li>
+            <li>
+              What I used in my role: React, Vue, TypeScript, OOP, Design Patterns, JavaScript, HTML, CSS, Git, Tailwind CSS, Node.js, Scrum.
+            </li>
+          </ul>
+        </Label>
+      </div>
       {/* AIOPS */}
       <div className="resume__experience-section resume__margin">
         <Label className="resume__experience-title resume__margin">
@@ -18,7 +44,7 @@ function Experience() {
           <b>Company:</b> AIOPSGROUP
         </Label>
         <Label className="resume__experience-date resume__margin">
-          <Icon name="date-time" /> 03/2022 - Ongoing
+          <Icon name="date-time" /> 03/2022 - 07/2023
         </Label>
         <Label className="resume__experience-description">
           <b>Duties: </b>
@@ -40,7 +66,7 @@ function Experience() {
               </Link>
             </li>
             <li>
-              Used technologies: React, Vue, TypeScript, Next.js, Nuxt.js,
+              What I used in my role: React, Vue, TypeScript, Next.js, Nuxt.js,
               JavaScript, HTML, CSS, Git, Tailwind CSS, Node.js, GraphQL, Scrum.
             </li>
           </ul>
@@ -70,7 +96,7 @@ function Experience() {
               </Link>
             </li>
             <li>
-              Used technologies: Azure, Scrum, Ember.js, JavaScript, HTML, CSS,
+              What I used in my role: Azure, Scrum, Ember.js, JavaScript, HTML, CSS,
               Git, Rally.
             </li>
           </ul>
@@ -106,7 +132,7 @@ function Experience() {
             </li>
             <li>Developing Web Components with HTML, CSS and JavaScript.</li>
             <li>
-              Used technologies: Scrum, Node.js, Docker, MongoDB, JavaScript,
+              What I used in my role: Scrum, Node.js, Docker, MongoDB, JavaScript,
               HTML, CSS, Git, Jira.
             </li>
           </ul>
@@ -134,7 +160,7 @@ function Experience() {
               </Link>
             </li>
             <li>
-              Used technologies: Angular, JavaScript, HTML, CSS, Webpack, Git,
+              What I used in my role: Angular, JavaScript, HTML, CSS, Webpack, Git,
               Jira, Scrum, TypeScript.
             </li>
           </ul>
@@ -164,7 +190,7 @@ function Experience() {
               Developed a bug tracking system application with React Native.
             </li>
             <li>
-              Used technologies: Ionic, AngularJS, JavaScript, HTML, CSS, Grunt,
+              What I used in my role: Ionic, AngularJS, JavaScript, HTML, CSS, Grunt,
               Python, React Native, Git.
             </li>
           </ul>
@@ -187,7 +213,7 @@ function Experience() {
             <li>Developing Online Casino Games.</li>
             <li>Using TypeScript to develop game engines.</li>
             <li>
-              Used technologies: TypeScript, JavaScript, HTML, CSS, Git, Grunt.
+              What I used in my role: TypeScript, JavaScript, HTML, CSS, Git, Grunt.
             </li>
           </ul>
         </Label>
