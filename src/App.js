@@ -2,7 +2,7 @@ import {
   Button,
   FlexibleColumnLayout,
   List,
-  StandardListItem,
+  ListItemStandard,
   Avatar,
   Label,
   Title,
@@ -80,38 +80,38 @@ function App() {
           </div>
           <div className="resume__header-list">
             <List id="col1list">
-              <StandardListItem
+              <ListItemStandard
                 id={oMidColumnMap.Education}
                 icon="study-leave"
                 additional-text=">"
                 additional-text-state="Information"
               >
                 EDUCATION
-              </StandardListItem>
-              <StandardListItem
+              </ListItemStandard>
+              <ListItemStandard
                 id={oMidColumnMap.Experience}
                 icon="business-card"
                 additional-text=">"
                 additional-text-state="Information"
               >
                 WORK EXPERIENCE
-              </StandardListItem>
-              <StandardListItem
+              </ListItemStandard>
+              <ListItemStandard
                 id={oMidColumnMap.Skills}
                 icon="activities"
                 additional-text=">"
                 additional-text-state="Information"
               >
                 SKILLS
-              </StandardListItem>
-              <StandardListItem
+              </ListItemStandard>
+              <ListItemStandard
                 id={oMidColumnMap.Interests}
                 icon="globe"
                 additional-text=">"
                 additional-text-state="Information"
               >
                 INTERESTS
-              </StandardListItem>
+              </ListItemStandard>
             </List>
           </div>
         </div>

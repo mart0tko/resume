@@ -1,4 +1,4 @@
-import { Badge, Title } from "@ui5/webcomponents-react";
+import { Tag, Title } from "@ui5/webcomponents-react";
 import "./Interests.css";
 
 function Interests() {
@@ -7,25 +7,25 @@ function Interests() {
       <Title level="H1"><b>Interests</b></Title>
       <br/>
       <br/>
-      <Badge className="resume__interests-badge" color-scheme="7">Family</Badge>
-      <Badge className="resume__interests-badge" color-scheme="1">Programming</Badge>
-      <Badge className="resume__interests-badge" color-scheme="6">Programming Architecture</Badge>
+      <Tag className="resume__interests-Tag" color-scheme="7">Family</Tag>
+      <Tag className="resume__interests-Tag" color-scheme="1">Programming</Tag>
+      <Tag className="resume__interests-Tag" color-scheme="6">Programming Architecture</Tag>
       <br/>
-      <Badge className="resume__interests-badge" color-scheme="7">Investing</Badge>
-      <Badge className="resume__interests-badge" color-scheme="1">Cars</Badge>
-      <Badge className="resume__interests-badge" color-scheme="6">Fishing</Badge>
+      <Tag className="resume__interests-Tag" color-scheme="7">Investing</Tag>
+      <Tag className="resume__interests-Tag" color-scheme="1">Cars</Tag>
+      <Tag className="resume__interests-Tag" color-scheme="6">Fishing</Tag>
       <br/>
-      <Badge className="resume__interests-badge" color-scheme="7">Taekwondo</Badge>
-      <Badge className="resume__interests-badge" color-scheme="1">Kickboxing</Badge>
-      <Badge className="resume__interests-badge" color-scheme="6">Fitness</Badge>
+      <Tag className="resume__interests-Tag" color-scheme="7">Taekwondo</Tag>
+      <Tag className="resume__interests-Tag" color-scheme="1">Kickboxing</Tag>
+      <Tag className="resume__interests-Tag" color-scheme="6">Fitness</Tag>
       <br/>
-      <Badge className="resume__interests-badge" color-scheme="7">Politics</Badge>
-      <Badge className="resume__interests-badge" color-scheme="1">Properties</Badge>
-      <Badge className="resume__interests-badge" color-scheme="6">Music</Badge>
+      <Tag className="resume__interests-Tag" color-scheme="7">Politics</Tag>
+      <Tag className="resume__interests-Tag" color-scheme="1">Properties</Tag>
+      <Tag className="resume__interests-Tag" color-scheme="6">Music</Tag>
       <br/>
-      <Badge className="resume__interests-badge" color-scheme="7">Movies</Badge>
-      <Badge className="resume__interests-badge" color-scheme="1">Friends</Badge>
-      <Badge className="resume__interests-badge" color-scheme="1">Good Food</Badge>
+      <Tag className="resume__interests-Tag" color-scheme="7">Movies</Tag>
+      <Tag className="resume__interests-Tag" color-scheme="1">Friends</Tag>
+      <Tag className="resume__interests-Tag" color-scheme="1">Good Food</Tag>
       <br/>
     </div>
   );
